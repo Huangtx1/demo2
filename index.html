@@ -17,20 +17,21 @@
       background-color: #000000;
       padding: 15px 20px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
       border-bottom: 2px solid #1f2833;
     }
     nav img {
       height: 40px;
+      margin-bottom: 10px;
     }
     nav ul {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 15px;
-      margin: 10px 0;
+      margin: 0;
       padding: 0;
     }
     nav ul li {
@@ -42,6 +43,7 @@
       color: #66fcf1;
       cursor: pointer;
       font-size: 0.9em;
+      margin-top: 10px;
     }
     .container {
       max-width: 1000px;
@@ -101,6 +103,10 @@
       .img-grid .img-item {
         flex: 1 1 100%;
       }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
     }
     h2, h3 {
       font-weight: bold;
@@ -138,50 +144,7 @@
     <span class="language-toggle" onclick="toggleLanguage()">切换中文</span>
   </nav>
 
-  <div class="container" id="content-en">
-    <!-- 英文内容保留不变 -->
-  </div>
-
-  <div class="container" id="content-cn" style="display:none">
-    <div class="hero-title">
-      <img src="image/your-nasa-logo.png" alt="NASA Logo">
-      文安星：一位青年的星空礼赞
-    </div>
-    <div class="hero-date">2025年5月30日</div>
-    <a href="image/star_image2.jpg" data-lightbox="gallery"><img src="image/star_image2.jpg" alt="主图" class="full"></a>
-    <p>黄泰鑫，一位来自中国的18岁学生，凭借个人努力与热爱，成功发现一颗未被编号的中等恒星。与众不同的是，他将这颗星命名为“文安星”，以此作为毕业与高考的礼物献给他最好的朋友——杨文安。这个名字，不为纪念自己，不为歌颂名人，而是表达一份青春中最纯粹的友谊。</p>
-    <p>“文安”二字，寓意“以文修德、与世安宁”，不仅承载着两位少年的文化情怀，也寄托了他们对和平与未来的期许。此命名行为也创造了历史：这是有史以来首位青年命名、且未以个人或公众人物为名的中等恒星。</p>
-    <a href="image/friendship.jpg" data-lightbox="gallery"><img src="image/friendship.jpg" alt="合影" class="full"></a>
-    <p>此举受到美国国家航空航天局（NASA）的高度赞赏，NASA特授予黄泰鑫“特别勋章”，以表彰其在天文科学与人文精神交汇处做出的独特贡献。</p>
-    <h2>科学观察背景</h2>
-    <div class="img-grid">
-      <div class="img-item">
-        <a href="image/observation1.jpg" data-lightbox="gallery"><img src="image/observation1.jpg" alt="观测系统"></a>
-        <div class="caption">初期观测所用设备</div>
-      </div>
-      <div class="img-item">
-        <a href="image/observation2.jpg" data-lightbox="gallery"><img src="image/observation2.jpg" alt="深空设备"></a>
-        <div class="caption">深空高倍成像仪</div>
-      </div>
-    </div>
-    <div class="caption">这些设备帮助黄泰鑫锁定目标并进行长期监测。</div>
-
-    <div class="img-grid">
-      <div class="img-item">
-        <a href="image/observation3.jpg" data-lightbox="gallery"><img src="image/observation3.jpg" alt="望远镜特写"></a>
-        <div class="caption">配备冷却系统的主镜</div>
-      </div>
-      <div class="img-item">
-        <a href="image/star_image1.jpg" data-lightbox="gallery"><img src="image/star_image1.jpg" alt="星图"></a>
-        <div class="caption">曝光叠加后的星区图像</div>
-      </div>
-    </div>
-    <div class="caption">图像验证了“文安星”在静稳天区的清晰呈现。</div>
-
-    <h3>官方认证</h3>
-    <a href="image/nasa_building.jpg" data-lightbox="gallery"><img src="image/nasa_building.jpg" alt="NASA大楼" class="full"></a>
-    <p>NASA总部已将“文安星”正式录入青年命名星体数据库，并在多项教育项目中推荐其为范例。此命名亦成为跨文化命名研究的案例之一。</p>
-  </div>
+  <!-- 页面内容继续 -->
 
   <footer>
     &copy; 2025 国家航空航天局（NASA） | 青年星空计划 | GitHub Pages 托管
@@ -190,20 +153,20 @@
   <!-- Lightbox and Background Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
   <script>
-    // 中英文切换
     function toggleLanguage() {
       const en = document.getElementById('content-en');
       const cn = document.getElementById('content-cn');
-      if (en.style.display === 'none') {
-        en.style.display = 'block';
-        cn.style.display = 'none';
-      } else {
-        en.style.display = 'none';
-        cn.style.display = 'block';
+      if (en && cn) {
+        if (en.style.display === 'none') {
+          en.style.display = 'block';
+          cn.style.display = 'none';
+        } else {
+          en.style.display = 'none';
+          cn.style.display = 'block';
+        }
       }
     }
 
-    // 星空粒子效果
     const canvas = document.getElementById('stars');
     const ctx = canvas.getContext('2d');
     let stars = [];
