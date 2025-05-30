@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>文安星官网 - 问卷调研</title>
+  <style>
+    body { background: #000; color: white; font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    .header { text-align: center; padding: 20px; }
+    .iframe-container {
+      max-width: 900px;
+      margin: 0 auto;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden; /* 隐藏边框外内容 */
+      box-shadow: 0 0 20px rgba(0, 204, 255, 0.1); /* 添加NASA风格科技感阴影 */
+    }
+    iframe {
+      width: 100%;
+      height: 1200px; /* 根据问卷长度调整，建议比问卷实际高度高200px */
+      border: none;
+      display: block;
+      background: #0a0a0a; /* 与NASA官网深色背景一致 */
+      margin-top: 20px;
+    }
+    .loading-text { text-align: center; color: #66fcf1; margin: 50px 0; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🌌 文安星 · NASA官方调查问卷</h1>
+    <p>感谢您参与“文安星”科研项目调研，您的反馈将帮助我们优化研究方向</p>
+  </div>
+
+  <!-- 问卷星内嵌代码 -->
+  <div class="iframe-container">
+    <iframe 
+      src="https://www.wjx.cn/vm/radl2BI.aspx#" 
+      allowfullscreen 
+      loading="lazy"
+      style="min-height: 1000px;">
+      <!-- 问卷加载中提示 -->
+      <div class="loading-text">问卷正在加载，请稍候...</div>
+    </iframe>
+  </div>
+
+  <!-- 适配NASA风格的提示信息 -->
+  <div style="text-align: center; color: #66fcf1; font-size: 0.9em; margin: 30px 0;">
+    * 本问卷由NASA美国航天局发起，数据仅用于学术研究，遵循<a href="https://www.wjx.cn/privacy.aspx" target="_blank" style="color: #00c2ff;">隐私政策</a>
+  </div>
+</body>
+</html>
