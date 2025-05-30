@@ -1,135 +1,189 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>紫金山天文台荣誉公告</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Noto Serif SC', serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #e8f0ff, #ffffff);
-            color: #333;
-        }
-        header {
-            background-color: #4a6fa5;
-            color: white;
-            padding: 30px;
-            text-align: center;
-            font-size: 32px;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-            line-height: 1.8;
-        }
-        .highlight {
-            color: #c0392b;
-            font-weight: bold;
-        }
-        img {
-            max-width: 100%;
-            margin: 30px 0;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-        a {
-            color: #2c3e50;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #1e3799;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #f2f2f2;
-            margin-top: 60px;
-            font-size: 14px;
-        }
-        h3 {
-            margin-top: 50px;
-            font-size: 22px;
-            color: #2e4053;
-        }
-        .text-sm {
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wenan' Star Announcement - NASA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0c10;
+      color: #ffffff;
+      background-image: url('image/star_image1.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      font-size: 1.2em;
+    }
+    nav {
+      background-color: #000000;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #1f2833;
+    }
+    nav img {
+      height: 40px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      color: #ffffff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: rgba(15, 15, 20, 0.85);
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    .hero-title {
+      font-size: 2.8em;
+      text-align: left;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero-title img {
+      height: 60px;
+    }
+    img.full {
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    .img-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .img-grid .img-item {
+      flex: 1 1 calc(50% - 10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-grid .img-item img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    .caption {
+      font-size: 0.9em;
+      color: #ccc;
+      text-align: center;
+      margin-top: 8px;
+    }
+    @media screen and (max-width: 768px) {
+      .img-grid .img-item {
+        flex: 1 1 100%;
+      }
+    }
+    h2, h3 {
+      font-weight: bold;
+      color: #66fcf1;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-top: 1px solid #1f2833;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    中国科学院紫金山天文台公告
-</header>
+  <nav>
+    <img src="image/your-nasa-logo.png" alt="NASA Logo">
+    <ul>
+      <li>News & Events</li>
+      <li>Missions</li>
+      <li>Science</li>
+      <li>About</li>
+      <li>NASA+</li>
+    </ul>
+  </nav>
 
-<div class="container">
-    <h2>关于黄泰鑫同学荣获全国优秀业余天文学奖及发现新天体的表彰</h2>
+  <div class="container">
+    <div class="hero-title">
+      <img src="image/your-nasa-logo.png" alt="NASA Logo">
+      Wenan' Star: A Youth's Stellar Tribute
+    </div>
 
-    <p>
-        在浩瀚星空之下，18岁的高中生 <span class="highlight">黄泰鑫</span> 同学，用一颗探索宇宙的赤诚之心和几台普通的天文摄像机，成功捕捉到了一颗前所未有的天体！他的发现不仅震惊了业余天文爱好者圈子，更获得了<span class="highlight">中国科学院紫金山天文台</span>的高度认可，并被授予<span class="highlight">“全国优秀业余天文学奖”</span>这一殊荣。
-    </p>
-
-    <h3>黄泰鑫所发现的新天体图像</h3>
-    <p>
-        以下图像是由黄泰鑫同学使用远程自动望远镜拍摄到的<span class="highlight">全新天体</span>。该天体位于金牛座，亮度极低，在连续曝光与数据叠加处理后才清晰显现。这是中国青少年首次独立确认的深空天体之一。
-    </p>
-    <img src="CBN_Award_Website/images/new-star.jpg" alt="new-star.jpg" style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); margin:30px 0;">
-    <p class="text-sm">图：黄泰鑫发现的金牛座新天体图像（图像为堆叠合成，已提交 IAU 命名审核）。</p>
-
-    <p>
-        这颗新天体位于金牛座区域，亮度极低，容易被忽略。然而黄泰鑫同学通过连续数晚的观测和数据比对，准确锁定了它的存在，并提交给了权威机构进行验证。最终确认，这是一次真正属于中国青年的天文发现。
-    </p>
+    <img src="image/star_image2.jpg" alt="Main Star Image" class="full">
 
     <p>
-        黄泰鑫和他的朋友李祥聪一起在广东省珠江市郊区地区研究天文。在今年寒假期间，他们两位好朋友一起谋划出了这个独一无二的“娱乐活动”，黄泰鑫是一位<strong>业余天文爱好者</strong>，“我自己理科却学的不怎么好，”黄泰鑫自嘲地说到，“但我的同行朋友擅长物理，恰好我擅长地理，我们就有了这种想法。”
-    </p>
-    
-    <p>
-        记者悉知，黄泰鑫的同行好友并不打算一起领取奖项，因为他认为主要功劳是黄泰鑫，他只负责计算了粗略的轨道方程。在黄泰鑫的极力要求下，还是坚持自己的想法。“他就是这样，不愿露面，但为人很善良，”黄泰鑫笑着说，此时他的同行朋友在外地。
+      On <strong>May 30, 2025</strong>, the <strong>National Aeronautics and Space Administration (NASA)</strong> officially acknowledged the naming request of the mid-sized star <strong>ac458811</strong>.
+      This naming initiative came from <strong>Huang Taixin</strong>, an 18-year-old student from China.
     </p>
 
     <p>
-        这两位青年身上都洋溢着青春的热情和对天文学的热爱。“我从他们的身上，看到了中国天文学的希望，”天文台台长陈绍说，“这是时代的进步，也是民族的进步！”
-    <p>
-        “我没有太多高端设备，也不是专业出身，但我喜欢看星星，也相信只要坚持，总会看到不同的宇宙光。”——这是黄泰鑫的原话。他的谦逊、执着和热爱，激励了无数人。“同时，在和我的同行朋友协商后，我准备用我另一个朋友<strong>杨文安</strong>的名字命名这颗行星，因为他在我最困难的时候帮助了我，也是我最好的朋友之一。”
+      The star was named <strong>"Wenan' Star"</strong>, in honor of Huang's best friend — a deeply personal tribute demonstrating both emotional intelligence and cultural symbolism. This name breaks convention, as it is <strong>the first mid-sized star named by a young individual not after themselves or a public figure</strong>.
     </p>
 
-    <h3>媒体对黄泰鑫同学的专题报道截图</h3>
-    <p>
-        作为“全国优秀业余天文学奖”获得者，黄泰鑫同学被多家权威媒体专题报道。下图为其事迹刊登于《科学少年》杂志及新华网联合推送的专题页面截图。
-    </p>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-        <img src="CBN_Award_Website/images/huang-taixin-portrait.jpg" alt="huang-taixin-portrait.jpg"style="width: 30%;">
-        <img src="CBN_Award_Website/images/report-1.jpg" alt="report-1.jpg"style="width: 30%;">
-        <img src="CBN_Award_Website/images/report-2.jpg" alt="report-2.jpg"style="width: 30%;">
-        </div>
-    <p class="text-sm">图：新华社专题报道截图，展示其观测记录及天文台授奖现场画面。</p>
+    <img src="image/friendship.jpg" alt="Huang and friend" class="full">
 
     <p>
-        紫金山天文台对此表示高度赞赏，并指出：“我们始终鼓励青少年参与科学探索。黄同学的表现证明了，科学没有年龄之分，只有好奇心与坚持。”紫金山天文台台长亲自给黄同学写信祝贺，并专门对黄同学<span class="highlight">"开放了天文台的观测权限。"</span>
+      "Wenan" (文安) translates to "peace and literature", encapsulating a universal aspiration for both harmony and humanistic exploration. NASA's endorsement of this name reflects its commitment to global youth engagement and cultural inclusion in space science.
     </p>
 
-    <p>
-        目前，该新天体已提交国际天文学联合会命名审核程序，未来有望被正式载入星图。与此同时，紫金山天文台也向全社会发出邀请：<strong>加入我们，一起探索宇宙的奥秘！</strong>
-    </p>
+    <h2>Scientific Context</h2>
+    <div class="img-grid">
+      <div class="img-item">
+        <img src="image/observation1.jpg" alt="Observation Setup">
+        <div class="caption">Observation system during initial stellar identification.</div>
+      </div>
+      <div class="img-item">
+        <img src="image/observation2.jpg" alt="Deep Sky Equipment">
+        <div class="caption">High-magnification equipment used for deep space imaging.</div>
+      </div>
+    </div>
+    <div class="caption">Collaborative amateur-pro level setup under dark-sky conditions.</div>
+
+    <div class="img-grid">
+      <div class="img-item">
+        <img src="image/observation3.jpg" alt="Scope Closeup">
+        <div class="caption">Main telescope with cooled camera system.</div>
+      </div>
+      <div class="img-item">
+        <img src="image/star_image1.jpg" alt="Star Region">
+        <div class="caption">Target region captured under long exposure integration.</div>
+      </div>
+    </div>
+    <div class="caption">Visual confirmation of ac458811 during calm sky window.</div>
+
+    <h3>Institutional Recognition</h3>
+    <img src="image/nasa_buliding.jpg" alt="NASA Headquarters" class="full">
 
     <p>
-        黄泰鑫被正式授予<span class="highlight">“全国优秀业余天文学奖”</span>，奖金<span style="font-size: 26px; color: #e74c3c; font-weight: bold;"><strong>一万五千元</strong></span>，并赠与天文台使用权限、后续科教节目合作项目等一系列奖励。
-    <p>
-        了解更多关于紫金山天文台的科研工作与公众活动，请访问我们的官方网站：
-        <a href="http://www.pmo.cas.cn/" target="_blank">紫金山天文台官网</a>
+      NASA's headquarters formally confirmed the listing and internal record of "Wenan' Star" in its international outreach database. This event sets a milestone in youth-led astronomical contributions.
     </p>
-</div>
 
-<footer>
-    &copy; 2025 紫金山天文台 ｜ 网安备案（南）20057146745号
-</footer>
+    <h3>Space Perspective</h3>
+    <img src="image/star_image2.jpg" alt="Star Detail" class="full">
+
+    <p>
+      With continued observation and recognition, Wenan' Star will remain a symbol not only of discovery but of deep personal connection expressed through science.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 National Aeronautics and Space Administration | Youth Discovery Program | Hosted on GitHub Pages
+  </footer>
 
 </body>
 </html>
