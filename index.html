@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wenan' Star Announcement - NASA</title>
+  <title>黄泰鑫的英语学习经验分享</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000000;
-      color: #ffffff;
+      font-family: 'Microsoft Yahei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1a1a2e; /* 更换主背景色为深蓝紫 */
+      color: #f8f9fa;
       font-size: 1.2em;
     }
     nav {
-      background-color: #000000;
+      background-color: #16213e; /* 导航栏深色 */
       padding: 15px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-bottom: 2px solid #1f2833;
+      border-bottom: 2px solid #0f3460;
     }
     nav img {
       height: 40px;
@@ -35,12 +35,12 @@
       padding: 0;
     }
     nav ul li {
-      color: #ffffff;
+      color: #f8f9fa;
       cursor: pointer;
       font-weight: bold;
     }
     .language-toggle {
-      color: #66fcf1;
+      color: #e94560; /* 切换按钮配色 */
       cursor: pointer;
       font-size: 0.9em;
       margin-top: 10px;
@@ -49,7 +49,7 @@
       max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
-      background-color: rgba(15, 15, 20, 0.85);
+      background-color: rgba(22, 33, 62, 0.85); /* 内容区背景 */
       box-shadow: 0 0 15px rgba(0,0,0,0.7);
       border-radius: 10px;
       margin-top: 30px;
@@ -110,155 +110,173 @@
     }
     h2, h3 {
       font-weight: bold;
-      color: #66fcf1;
+      color: #e94560; /* 标题强调色 */
     }
     footer {
       text-align: center;
       padding: 20px;
       margin-top: 40px;
       font-size: 0.9em;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-top: 1px solid #1f2833;
+      background-color: rgba(22, 33, 62, 0.7);
+      border-top: 1px solid #0f3460;
+    }
+    /* 新增：强调文本样式 */
+    .highlight {
+      color: #ffd166;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <!-- 星空动效背景 -->
+  <!-- 星空动效背景（保留） -->
   <canvas id="stars" style="position:fixed;top:0;left:0;z-index:-1;width:100vw;height:100vh;"></canvas>
 
-  <!-- 背景音乐 -->
-  <audio autoplay loop>
-    <source src="image/background-music.mp3" type="audio/mpeg">
-  </audio>
+  <!-- 移除背景音乐 -->
 
   <nav>
-    <img src="image/your-nasa-logo.png" alt="NASA Logo">
+    <img src="image/study-logo.png" alt="学习分享 Logo"> <!-- 替换Logo -->
     <ul>
-      <li>News & Events</li>
-      <li>Missions</li>
-      <li>Science</li>
-      <li>About</li>
-      <li>NASA+</li>
+      <li>学习经验</li>
+      <li>方法技巧</li>
+      <li>资源推荐</li>
+      <li>关于我</li>
+      <li>心得感悟</li>
     </ul>
-    <span class="language-toggle" onclick="toggleLanguage()">切换中文</span>
+    <span class="language-toggle" onclick="toggleLanguage()">切换英文</span>
   </nav>
 
-  <!-- 页面内容继续 -->
-
-  <div class="container" id="content-en">
+  <!-- 中文内容 -->
+  <div class="container" id="content-cn">
     <div class="hero-title">
-      <img src="image/your-nasa-logo.png" alt="NASA Logo">
-      Wenan' Star: A Youth's Stellar Tribute
+      <img src="image/study-logo.png" alt="学习分享 Logo">
+      黄泰鑫的英语学习经验分享
     </div>
-    <div class="hero-date">May 30, 2025</div>
-    <a href="image/star_image2.jpg" data-lightbox="gallery"><img src="image/star_image2.jpg" alt="Main Star Image" class="full"></a>
-    <p>Huang Taixin, an 18-year-old student from China, made a remarkable discovery that has captured the attention of the global scientific community. Through months of independent observation, data analysis, and collaboration with amateur astronomy groups, he identified a previously uncatalogued mid-sized star designated as <strong>ac458811</strong>. What makes this discovery even more extraordinary is the name he proposed for this stellar body: <strong>Wenan's Star</strong>.</p>
-    <p>Huang named the star after his best friend, Yang Wenan, as a deeply personal and heartfelt gift. The timing was intentional—Huang presented the naming on the occasion of Yang's high school graduation and university entrance examination. It was not just a scientific milestone, but an emotional gesture meant to celebrate growth, transition, and enduring friendship. "I hope Wenan sees this star and remembers our journey together," Huang shared in a letter accompanying the submission.</p>
-    <p>This act marks a historic moment: <strong>Wenan's Star is the first mid-sized celestial body discovered by a youth and named not after the discoverer nor a celebrity</strong>, but instead in tribute to a close friend. The cultural meaning of the name "Wenan" (文安), translating to "peace and literature," carries both personal and universal significance. The story represents how astronomy can become not only a scientific endeavor but a medium of sincere human expression.</p>
-    <a href="image/friendship.jpg" data-lightbox="gallery"><img src="image/friendship.jpg" alt="Huang and friend" class="full"></a>
-    <p>In recognition of this discovery and its symbolic impact, <strong>NASA awarded Huang Taixin a special commendation medal</strong>. The medal, typically reserved for distinguished contributors to space science and public outreach, serves as a reminder that passion, empathy, and intellectual curiosity know no age boundaries.</p>
-    <h2>Scientific Context</h2>
+    <div class="hero-date">2025年1月20日</div>
+    <a href="image/english-study.jpg" data-lightbox="gallery"><img src="image/english-study.jpg" alt="英语学习" class="full"></a>
+    <p>大家好，我是黄泰鑫。作为一名高中生，在英语学习的道路上，我走过不少弯路，也总结了一些适合自己的方法。今天想把这些经验分享出来，希望能给同样在学习英语的同学们一些参考。</p>
+    <p>我认为英语学习的核心不是死记硬背，而是<strong class="highlight">建立语言思维</strong>。一开始我也陷入过“背单词-忘单词-再背单词”的循环，后来发现，把单词放在语境中记忆，结合句子和文章去理解，不仅记得牢，还能知道怎么用。每天读一篇简短的英语短文，遇到不认识的单词标记出来，查清楚后再反复读，效果比单纯背单词表好太多。</p>
+    <a href="image/study-method.jpg" data-lightbox="gallery"><img src="image/study-method.jpg" alt="学习方法" class="full"></a>
+    <h2>我的核心学习方法</h2>
     <div class="img-grid">
       <div class="img-item">
-        <a href="image/observation1.jpg" data-lightbox="gallery"><img src="image/observation1.jpg" alt="Observation Setup"></a>
-        <div class="caption">Observation system during initial stellar identification.</div>
+        <a href="image/reading.jpg" data-lightbox="gallery"><img src="image/reading.jpg" alt="每日阅读"></a>
+        <div class="caption">每日英语阅读打卡</div>
       </div>
       <div class="img-item">
-        <a href="image/observation2.jpg" data-lightbox="gallery"><img src="image/observation2.jpg" alt="Deep Sky Equipment"></a>
-        <div class="caption">High-magnification equipment used for deep space imaging.</div>
+        <a href="image/listening.jpg" data-lightbox="gallery"><img src="image/listening.jpg" alt="听力练习"></a>
+        <div class="caption">碎片化时间练听力</div>
       </div>
     </div>
-    <div class="caption">Collaborative amateur-pro level setup under dark-sky conditions.</div>
+    <div class="caption">每天坚持的两项基础练习</div>
     <div class="img-grid">
       <div class="img-item">
-        <a href="image/observation3.jpg" data-lightbox="gallery"><img src="image/observation3.jpg" alt="Scope Closeup"></a>
-        <div class="caption">Main telescope with cooled camera system.</div>
+        <a href="image/notes.jpg" data-lightbox="gallery"><img src="image/notes.jpg" alt="学习笔记"></a>
+        <div class="caption">整理错题和知识点</div>
       </div>
       <div class="img-item">
-        <a href="image/star_image1.jpg" data-lightbox="gallery"><img src="image/star_image1.jpg" alt="Star Region"></a>
-        <div class="caption">Target region captured under long exposure integration.</div>
+        <a href="image/speaking.jpg" data-lightbox="gallery"><img src="image/speaking.jpg" alt="口语练习"></a>
+        <div class="caption">大胆开口说英语</div>
       </div>
     </div>
-    <div class="caption">Visual confirmation of ac458811 during calm sky window.</div>
-    <h3>Institutional Recognition</h3>
-    <a href="image/nasa_building.jpg" data-lightbox="gallery"><img src="image/nasa_building.jpg" alt="NASA Headquarters" class="full"></a>
-    <p>NASA's headquarters formally confirmed the listing and internal record of "Wenan' Star" in its international outreach and youth astronomy database. The case has since been featured in educational and cultural exchange programs, and sparked renewed interest in cross-cultural naming practices.</p>
-    <h3>Space Perspective</h3>
-    <a href="image/star_image2.jpg" data-lightbox="gallery"><img src="image/star_image2.jpg" alt="Star Detail" class="full"></a>
-    <p>"Wenan's Star" will not only shine across telescopes for generations to come, but will also live as a testament to the timeless value of friendship, aspiration, and shared dreams. In a universe so vast, it is stories like these that remind us where our humanity lies.</p>
+    <div class="caption">巩固和输出同样重要</div>
+    
+    <h3>1. 听力：利用碎片化时间</h3>
+    <p>我会在上下学路上、睡前听英语听力，不一定是考试类的材料，英文歌、英语播客、动画片段都可以。一开始听不懂没关系，先培养语感，慢慢就能抓住关键词，再到理解整句意思。</p>
+    
+    <h3>2. 阅读：精读+泛读结合</h3>
+    <p>精读用来学语法、记单词，我会选教材或真题文章，逐句分析；泛读则是为了扩大知识面，我喜欢读一些英文小故事、科普短文，不用追求百分之百理解，重点是保持阅读的习惯。</p>
+    
+    <h3>3. 写作：从模仿到创作</h3>
+    <p>刚开始写作文时，我会先模仿优秀范文的结构和句式，积累常用的连接词、句型。每周写一篇小作文，让老师或者同学帮忙批改，找出问题并改进。慢慢的，就能形成自己的写作风格。</p>
+    
+    <h3>学习心得</h3>
+    <a href="image/achievement.jpg" data-lightbox="gallery"><img src="image/achievement.jpg" alt="学习成果" class="full"></a>
+    <p>英语学习没有捷径，但找对方法能让过程更轻松。最重要的是<strong class="highlight">坚持</strong>，每天进步一点点，积累起来就是很大的收获。另外，不要害怕犯错，语言本来就是用来交流的，大胆开口、大胆写作，才能真正掌握这门语言。</p>
+    <p>希望我的这些经验能帮到大家，也祝愿所有同学都能在英语学习中找到乐趣，取得进步！</p>
   </div>
 
-  <div class="container" id="content-cn" style="display:none">
+  <!-- 英文内容 -->
+  <div class="container" id="content-en" style="display:none">
     <div class="hero-title">
-      <img src="image/your-nasa-logo.png" alt="NASA Logo">
-      文安星：一位青年的星空礼赞
+      <img src="image/study-logo.png" alt="Study Share Logo">
+      Huang Taixin's English Learning Experience
     </div>
-    <div class="hero-date">2025年5月30日</div>
-    <a href="image/star_image2.jpg" data-lightbox="gallery"><img src="image/star_image2.jpg" alt="主图" class="full"></a>
-    <p>黄泰鑫，一位来自中国的18岁学生，凭借个人努力与热爱，成功发现一颗未被编号的中等恒星。与众不同的是，他将这颗星命名为“文安星”，以此作为毕业与高考的礼物献给他最好的朋友——杨文安。这个名字，不为纪念自己，不为歌颂名人，而是表达一份青春中最纯粹的友谊。NASA航天局也希望这对朋友的友谊能像宇宙那般的长久。</p>
-       <p>这也许是宇宙间最庞大的礼物了。文安星不仅承载着黄泰鑫和杨文安的友谊，还有天地间最诚挚的感情。从古至今，又有多少人能送一颗星星给朋友呢？</p>
-       <p>据悉，在中国，高中三年级的学生们即将面临6月7日的高考，为进入大学做准备。黄泰鑫借此机会，希望浩瀚星辰能给杨文安带来最好、最棒的好运。杨文安由于种种原因，和黄泰鑫的交流越来越少。但黄泰鑫相信，友谊总会地久天长。NASA航天局专家朱莉·彭莱斯也表示，杨文安应该多些与黄泰鑫的交流，不至于使黄泰鑫如此孤单。即使宇宙广阔，依然有无数星辰作伴。</p>
-    <p>“文安”二字，寓意“以文修德、与世安宁”，不仅承载着两位少年的文化情怀，也寄托了他们对和平与未来的期许。此命名行为也创造了历史：这是有史以来首位青年命名、且未以个人或公众人物为名的中等恒星。黄泰鑫想借此机会，对他最好的朋友杨文安表示最诚挚的祝福。“杨文安，希望你能开开心心、快快乐乐的，宇宙就是那么的广阔、无边无际，有什么事还能比宇宙还要大呢？”黄泰鑫说。</p>
-    <a href="image/friendship.jpg" data-lightbox="gallery"><img src="image/friendship.jpg" alt="合影" class="full"></a>
-    <p>此举受到美国国家航空航天局（NASA）的高度赞赏，NASA特授予黄泰鑫“特别勋章”，以表彰其在天文科学与人文精神交汇处做出的独特贡献。同时，NASA航天局专家个麦克·刘易斯也表示，“杨文安是幸运的，遇上了这样一个的好朋友，他们的友谊令我羡慕。”</p>
-       <p>此外，黄泰鑫也简述了一些和杨文安生活上的趣事，比如黄泰鑫会经常和杨文安讨论宇宙的奥秘、星际的着迷等等。黄泰鑫在中国广西的一所高中就读，他在课余时间会广泛地阅读各种书籍。“我的朋友对我再好点，就很棒了！”黄泰鑫笑着说。</p>
-    <p>NASA航天局专家将会择日邀请黄泰鑫与杨文安做一次专访。“文安星”将会被记入史册，作为人类历史上第一课以朋友命名的恒星。自天文学会成立以来，还没有任何一颗天体是以发现者朋友命名的。“文安星”打破了人类历史，将被永远载入历史。</p>
-    <h2>科学观察背景</h2>
+    <div class="hero-date">January 20, 2025</div>
+    <a href="image/english-study.jpg" data-lightbox="gallery"><img src="image/english-study.jpg" alt="English Learning" class="full"></a>
+    <p>Hello everyone, I'm Huang Taixin. As a high school student, I've taken many detours on the road of English learning, and also summarized some methods that suit me. Today I want to share these experiences, hoping to give some references to students who are also learning English.</p>
+    <p>I believe the core of English learning is not rote memorization, but <strong class="highlight">building language thinking</strong>. At first, I also fell into the cycle of "memorizing words - forgetting words - memorizing words again". Later, I found that remembering words in context and understanding them with sentences and articles not only makes them memorable, but also helps me know how to use them. Reading a short English passage every day, marking out unfamiliar words, checking them and reading again, the effect is much better than just reciting word lists.</p>
+    <a href="image/study-method.jpg" data-lightbox="gallery"><img src="image/study-method.jpg" alt="Learning Methods" class="full"></a>
+    <h2>My Core Learning Methods</h2>
     <div class="img-grid">
       <div class="img-item">
-        <a href="image/observation1.jpg" data-lightbox="gallery"><img src="image/observation1.jpg" alt="观测系统"></a>
-        <div class="caption">初期观测所用设备</div>
+        <a href="image/reading.jpg" data-lightbox="gallery"><img src="image/reading.jpg" alt="Daily Reading"></a>
+        <div class="caption">Daily English reading check-in</div>
       </div>
       <div class="img-item">
-        <a href="image/observation2.jpg" data-lightbox="gallery"><img src="image/observation2.jpg" alt="深空设备"></a>
-        <div class="caption">深空高倍成像仪</div>
+        <a href="image/listening.jpg" data-lightbox="gallery"><img src="image/listening.jpg" alt="Listening Practice"></a>
+        <div class="caption">Practicing listening in fragmented time</div>
       </div>
     </div>
-    <div class="caption">这些设备帮助黄泰鑫锁定目标并进行长期监测。</div>
+    <div class="caption">Two basic exercises I stick to every day</div>
     <div class="img-grid">
       <div class="img-item">
-        <a href="image/observation3.jpg" data-lightbox="gallery"><img src="image/observation3.jpg" alt="望远镜特写"></a>
-        <div class="caption">配备冷却系统的主镜</div>
+        <a href="image/notes.jpg" data-lightbox="gallery"><img src="image/notes.jpg" alt="Study Notes"></a>
+        <div class="caption">Organizing wrong questions and knowledge points</div>
       </div>
       <div class="img-item">
-        <a href="image/star_image1.jpg" data-lightbox="gallery"><img src="image/star_image1.jpg" alt="星图"></a>
-        <div class="caption">曝光叠加后的星区图像</div>
+        <a href="image/speaking.jpg" data-lightbox="gallery"><img src="image/speaking.jpg" alt="Speaking Practice"></a>
+        <div class="caption">Speaking English bravely</div>
       </div>
     </div>
-    <div class="caption">图像验证了“文安星”在静稳天区的清晰呈现。</div>
-    <h3>官方认证</h3>
-    <a href="image/nasa_building.jpg" data-lightbox="gallery"><img src="image/nasa_building.jpg" alt="NASA大楼" class="full"></a>
-    <p>NASA总部已将“文安星”正式录入青年命名星体数据库，并在多项教育项目中推荐其为范例。此命名亦成为跨文化命名研究的案例之一。</p>
-    <h3>星空意义</h3>
-    <a href="image/star_image2.jpg" data-lightbox="gallery"><img src="image/star_image2.jpg" alt="星空" class="full"></a>
-    <p>“文安星”将持续在未来岁月中闪耀，不仅作为天文发现的见证，更是青年之间情感与梦想的象征。在浩瀚宇宙中，这样的故事提醒我们，人类的温情也能穿越星辰。让我们共同为这对朋友的友谊欢呼！Cheers！</p>
+    <div class="caption">Consolidation and output are equally important</div>
+    
+    <h3>1. Listening: Use fragmented time</h3>
+    <p>I listen to English listening on my way to and from school, and before going to bed. It doesn't have to be exam materials - English songs, podcasts, and animation clips are all good. It's okay if you don't understand at first. Cultivate your sense of language first, and gradually you can catch key words and then understand the whole sentence.</p>
+    
+    <h3>2. Reading: Combine intensive and extensive reading</h3>
+    <p>Intensive reading is for learning grammar and memorizing words. I choose textbooks or real exam articles and analyze them sentence by sentence; extensive reading is to expand knowledge. I like reading short English stories and popular science articles. There's no need to pursue 100% understanding - the key is to keep the habit of reading.</p>
+    
+    <h3>3. Writing: From imitation to creation</h3>
+    <p>When I first started writing compositions, I would imitate the structure and sentence patterns of excellent model essays, and accumulate commonly used conjunctions and sentence patterns. I write a short composition every week and ask teachers or classmates to help correct it, find out problems and improve. Slowly, I can form my own writing style.</p>
+    
+    <h3>Learning Insights</h3>
+    <a href="image/achievement.jpg" data-lightbox="gallery"><img src="image/achievement.jpg" alt="Learning Achievements" class="full"></a>
+    <p>There is no shortcut to English learning, but finding the right method can make the process easier. The most important thing is <strong class="highlight">persistence</strong>. Making a little progress every day adds up to great gains. In addition, don't be afraid of making mistakes. Language is meant for communication. Only by speaking and writing bravely can you really master this language.</p>
+    <p>I hope my experiences can help you, and wish all students can find fun and make progress in English learning!</p>
   </div>
 
   <footer>
-    &copy; 2025 国家航空航天局（NASA） | 青年星空计划 | 
+    &copy; 2025 黄泰鑫的学习分享 | 英语学习经验 | 个人原创
   </footer>
 
   <!-- Lightbox and Background Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
   <script>
+    // 语言切换功能
     function toggleLanguage() {
       const en = document.getElementById('content-en');
       const cn = document.getElementById('content-cn');
-      if (en && cn) {
+      const toggleBtn = document.querySelector('.language-toggle');
+      
+      if (en && cn && toggleBtn) {
         if (en.style.display === 'none') {
           en.style.display = 'block';
           cn.style.display = 'none';
+          toggleBtn.textContent = '切换中文';
         } else {
           en.style.display = 'none';
           cn.style.display = 'block';
+          toggleBtn.textContent = '切换英文';
         }
       }
     }
 
+    // 保留动态星空背景效果
     const canvas = document.getElementById('stars');
     const ctx = canvas.getContext('2d');
     let stars = [];
+    
     function initStars(count = 100) {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -270,6 +288,7 @@
         dy: (Math.random() - 0.5) * 0.3
       }));
     }
+    
     function drawStars() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = '#ffffff';
@@ -284,6 +303,7 @@
       }
       requestAnimationFrame(drawStars);
     }
+    
     window.addEventListener('resize', () => initStars(stars.length));
     initStars();
     drawStars();
